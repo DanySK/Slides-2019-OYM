@@ -1,0 +1,1070 @@
+<!doctype html>
+<html lang="en">
+  <head>
+	<meta name="generator" content="Hugo 0.54.0" />
+    <meta charset="utf-8">
+<title>From nature inspiration to aggregate computing</title>
+
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="./reveal-js/css/reveal.css"><link rel="stylesheet" href="./reveal-js/css/theme/blood.css" id="theme">
+<link rel="stylesheet" href="./highlight-js/default.min.css">
+    
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+  
+<section>
+
+<h5 id="from">From</h5>
+
+<h3 id="nature-inspiration">nature inspiration</h3>
+
+<h5 id="to">to</h5>
+
+<h3 id="aggregate-computing">aggregate computing</h3>
+
+<p><a href="http://www.danilopianini.org">Danilo Pianini</a></p>
+
+<footer>
+  <div style="font-size: 80%"> University of Bologna</div>
+</footer>
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-background-image="img/monza.png"
+      id="monza">
+  
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-background-image="img/monza-dark.png">
+  
+
+<section data-noprocess>
+  <ul>
+    <li class="fragment fade-in-then-semi-out" data-fragment-index=6>"Situatedness"</li>
+    <li class="fragment fade-in-then-semi-out" data-fragment-index=4>Unpredictability (humans)</li>
+    <li class="fragment fade-in-then-semi-out" data-fragment-index=1>High density</li>
+    <li class="fragment fade-in-then-semi-out" data-fragment-index=2>Heterogeneity</li>
+    <li class="fragment fade-in-then-semi-out" data-fragment-index=3>Mobility</li>
+    <li class="fragment fade-in-then-semi-out" data-fragment-index=5>Openness</li>
+    <li class="fragment fade-in-then-semi-out" data-fragment-index=7>Safety concerns</li>
+  </ul>
+</section>
+
+<aside class="notes"></aside>
+
+</section><section>
+
+<video width="120%" height="120%" autoplay controls loop><source data-src="video/stampede.mp4" type="video/webm" /></video>
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-background-image="img/monza-dark.png">
+  
+
+<h3 id="engineering-this-thing-i">Engineering this thing I</h3>
+
+<ol>
+<li><span class='fragment '
+  >
+  Condensate all the information in a single point
+</span></li>
+<li><span class='fragment '
+  >
+  Process this stuff
+</span> <span class='fragment '
+  >
+  ...somehow
+</span></li>
+<li><span class='fragment '
+  >
+  Send data back to devices
+</span></li>
+</ol>
+
+<ul>
+<li><span class='fragment '
+  >
+  Single point of failure
+</span></li>
+<li><span class='fragment '
+  >
+  Questionable scalability
+</span></li>
+<li><span class='fragment '
+  >
+  Misuse of network and computational power
+</span></li>
+<li><span class='fragment '
+  >
+  Does not play well with high densities
+</span></li>
+<li><span class='fragment '
+  >
+  High latency
+</span></li>
+<li><span class='fragment '
+  >
+  Privacy concerns
+</span></li>
+</ul>
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-background-image="img/monza-dark.png">
+  
+
+<h3 id="engineering-this-thing-ii">Engineering this thing II</h3>
+
+<span class='fragment '
+  >
+  Decentralize the computation
+</span>
+
+<ul>
+<li><span class='fragment '
+  >
+  Centralized algorithms can&#39;t be used anymore
+</span></li>
+<li><span class='fragment '
+  >
+  No one has everything under control...
+</span></li>
+<li><span class='fragment '
+  >
+  ...yet the system must behave coherently
+</span></li>
+</ul>
+
+<span class='fragment '
+  >
+  ...yeah, cool... how? :|
+</span>
+
+</section><section>
+
+<video width="100%" height="100%" controls><source data-src="video/mrbean720.mp4" type="video/webm" /></video>
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-background-image="img/spider-man.jpg">
+  
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-background-image="img/leaf-background.jpg">
+  
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/uEYcY7WfDTY?start=7" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-background-image="img/leaf-background.jpg">
+  
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/uhfXbSSrabw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-background-image="img/leaf-background.jpg">
+  
+
+<p><img src="img/geckopad.jpg" alt="Gecko Pad design" /></p>
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-background-image="img/leaf-background.jpg">
+  
+
+<p><img src="img/biomimicry-gecko-climging-pads.jpg" style="height:10em;"/></p>
+
+<p><a href="https://doi.org/10.1098/rsif.2014.0675"><span class='fragment '
+  >
+  Human climbing with efficiently scaled gecko-inspired dry adhesives
+</span></a></p>
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-background-image="img/leaf-background.jpg">
+  
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/5SNlG_2sFXc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-background-image="img/500nozomi.jpg">
+  
+
+<h2 id="hahahugoshortcode-0xc00015b400-32-hbhb-https-en-wikipedia-org-wiki-500-series-shinkansen"><a href="https://en.wikipedia.org/wiki/500_Series_Shinkansen"><span class='fragment '
+  >
+  500 Series Shinkansen
+</span></a></h2>
+
+<p><a href="https://en.wikipedia.org/wiki/500_Series_Shinkansen"><span class='fragment '
+  >
+  Air pressure change when exiting tunnels caused thunder-like noise disturbing in a 300m range
+</span></a></p>
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-background-image="img/leaf-background.jpg">
+  
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/veQ2ilQrzMU?start=20" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-background-image="img/700series.jpg">
+  
+
+<h2 id="hahahugoshortcode-0xc00015b400-37-hbhb-https-en-wikipedia-org-wiki-700-series-shinkansen"><a href="https://en.wikipedia.org/wiki/700_Series_Shinkansen"><span class='fragment '
+  >
+  700 Series Shinkansen
+</span></a></h2>
+
+<p><a href="https://en.wikipedia.org/wiki/700_Series_Shinkansen"><span class='fragment '
+  >
+  Kingfisher-like beak -&gt; problem solved.
+</span></a></p>
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-background-image="img/leaf-background.jpg">
+  
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/M8YjvHYbZ9w?start=46" style="position: absolute; top: 0; left: 0; width: 50%; height: 50%; border:0;" allowfullscreen title="asdsad"></iframe>
+  <iframe src="https://www.youtube.com/embed/rVlhMGQgDkY?start=26" style="position: absolute; bottom: 0; left: 0; width: 50%; height: 50%; border:0;" allowfullscreen title="asdsad"></iframe>
+  <iframe src="https://www.youtube.com/embed/wE3fmFTtP9g?start=43" style="position: absolute; top: 0; right: 0; width: 50%; height: 50%; border:0;" allowfullscreen title="asdsad"></iframe>
+  <iframe src="https://www.youtube.com/embed/tf7IEVTDjng?start=50" style="position: absolute; bottom: 0; right: 0; width: 50%; height: 50%; border:0;" allowfullscreen title="asdsad"></iframe>
+</div>
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-background-image="img/leaf-background.jpg">
+  
+
+<h3 id="back-to-the-problem">Back to the problem</h3>
+
+<ul>
+<li><span class='fragment '
+  >
+  Distributed system
+</span></li>
+<li><span class='fragment '
+  >
+  Heterogeneous devices
+</span></li>
+<li><span class='fragment '
+  >
+  No leaders
+</span></li>
+<li><span class='fragment '
+  >
+  Openness
+</span></li>
+</ul>
+
+<p>
+<span class='fragment '
+  >
+  Any inspiration?
+</span>
+</p>
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-background-image="img/leaf-background.jpg">
+  
+
+<div id="div1" style="width: 50%; height: 50%; float: left; overflow: hidden;">
+  <img src="img/ants.jpg" style="position:relative; width: 100%; height: 100%; border: 0; margin:auto; overflow: hidden;"/>
+</div>
+<div class="fragment" id="div2" style="width: 50%; height: 50%; float: left; overflow: hidden;">
+  <img src="img/termites.jpg" style="position:relative; width: 100%; height: 100%; border: 0; margin:auto; overflow: hidden;"/>
+</div>
+<div class="fragment" id="div3" style="width: 50%; height: 50%; float: left; overflow: hidden;">
+  <img src="img/firefly.jpg" style="position:relative; width: 100%; height: 100%; border: 0; margin:auto; overflow: hidden;"/>
+</div>
+<div class="fragment" id="div4" style="width: 50%; height: 50%; float: left; overflow: hidden;">
+  <img src="img/ecosystem.jpg" style="position:relative; width: 100%; height: 100%; border: 0; margin:auto; overflow: hidden;"/>
+</div>
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-background-image="img/leaf-background.jpg">
+  
+
+<h3 id="ant-food-search">Ant food search</h3>
+
+<ul>
+<li>Ants wander around searching for food</li>
+<li>If food is found:
+
+<ul>
+<li>the ant gets very excited</li>
+<li>it starts emitting pheromone</li>
+<li>it picks the food up</li>
+<li>it gets back to the nest, leaving a <em>pheromone trail</em></li>
+</ul></li>
+<li>Ants are attracted by pheromone trails of others</li>
+<li>Pheromones naturally evaporate after a while</li>
+</ul>
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-background-image="img/leaf-background.jpg">
+  
+
+<iframe src="https://www.netlogoweb.org/launch#https://www.netlogoweb.org/assets/modelslib/Sample%20Models/Biology/Ants.nlogo" style="position: relative; top: 0; left: 0; width: 100%; height: 14em;"> </iframe>
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-background-image="img/leaf-background.jpg">
+  
+
+<h3 id="termites-stockpiling">Termites stockpiling</h3>
+
+<ul>
+<li>Termites wander around</li>
+<li>If they find a piece of wood, they pick it up
+
+<ul>
+<li>If they find another piece of wood, they drop the one they have</li>
+</ul></li>
+</ul>
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-background-image="img/leaf-background.jpg">
+  
+
+<iframe src="https://www.netlogoweb.org/launch#https://www.netlogoweb.org/assets/modelslib/Sample%20Models/Biology/Termites.nlogo" style="position: relative; top: 0; left: 0; width: 100%; height: 14em;"> </iframe>
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-background-image="img/leaf-background.jpg">
+  
+
+<h3 id="firefly-synchronization">Firefly synchronization</h3>
+
+<ul>
+<li>Every some time, a firefly gets aroused and blinks</li>
+<li>Watching another firefly blinking makes it very likely to get aroused</li>
+</ul>
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-background-image="img/leaf-background.jpg">
+  
+
+<iframe src="https://www.netlogoweb.org/launch#https://www.netlogoweb.org/assets/modelslib/Sample%20Models/Biology/Fireflies.nlogo" style="position: relative; top: 0; left: 0; width: 100%; height: 14em;"> </iframe>
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-background-image="img/leaf-background.jpg">
+  
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/nSIPesWIDx8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-background-image="img/leaf-background.jpg">
+  
+
+<h4 id="side-effects-on-multiple-scales">Side effects on multiple scales</h4>
+
+<p><strong>simple</strong> <em>local</em> behaviours</p>
+
+<p class="fragment" data-fragment-index=1> ↓↓↓ </p>
+<p class="fragment" data-fragment-index=1> <b>complex</b> <i>global</i> behaviour </p>
+
+<span class='fragment '
+  >
+  effects reified on different scales
+</span>
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-background-image="img/leaf-background.jpg">
+  
+
+<h4 id="the-bad-part">The bad part</h4>
+
+<p>emergent behaviour is difficult to forecast</p>
+
+<blockquote>
+<p>simple behavioural and communicational rules, global effects</p>
+</blockquote>
+
+<p class="fragment" data-fragment-index=1> ↓↓↓ </p>
+
+<blockquote class="fragment" data-fragment-index=1> small mistakes, global consequences</blockquote>
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-background-image="img/leaf-background.jpg">
+  
+
+<h3 id="local-to-global">Local-to-global</h3>
+
+<blockquote>
+<p>something as small as the flutter of a butterfly&rsquo;s wing can ultimately cause a typhoon halfway around the world</p>
+</blockquote>
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-background-image="img/leaf-background.jpg">
+  
+
+<h4 id="the-bad-part-1">The bad part</h4>
+
+<ul>
+<li><span class='fragment '
+  >
+  Engineering emergency is hard
+</span></li>
+<li><span class='fragment '
+  >
+  Engineers don&#39;t like lack of control
+</span></li>
+<li><span class='fragment '
+  >
+  Poor composability
+</span></li>
+<li><span class='fragment '
+  >
+  Poor reusability
+</span></li>
+</ul>
+
+<p>
+<span class='fragment '
+  >
+  nature can bet on numbers, we can&#39;t.
+</span>
+</p>
+
+</section><section>
+
+<h4 id="a-different-take">A different take</h4>
+
+<p>We want to specify the global behavior, and have a machine (a compiler, or an interpreter) figure out what to execute.</p>
+
+</section><section>
+
+<h4 id="computer-science-is-a-story-of-paradigms">Computer science is a story of <strong>paradigms</strong></h4>
+
+<ul>
+<li><em>Machine code is unusable</em> <span class='fragment '
+  >
+  -&gt; Assembly
+</span></li>
+<li><em>Instructions are too complicated</em> <span class='fragment '
+  >
+  -&gt; Structured programming (FORTRAN, C...)
+</span></li>
+<li><em>Data structure should have behavior as well</em> <span class='fragment '
+  >
+  -&gt; Object orientation (C&#43;&#43;, Java...)
+</span></li>
+<li><em>Behavior should be isolated</em> <span class='fragment '
+  >
+  -&gt; Functional programming (LISP, Haskell...)
+</span></li>
+<li><em>I need parallelism and mobility</em> <span class='fragment '
+  >
+  -&gt; Actors (Akka)
+</span></li>
+</ul>
+
+</section><section>
+
+<h4 id="we-want-to-write-global-behavior">We want to write global behavior</h4>
+
+<span class='fragment '
+  >
+  -&gt; Aggregate Programming (Protelis, Scafi....)
+</span>
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-transition="none"
+      data-transition-speed="fast">
+  
+
+<h4 id="aggregate-programming-idea">Aggregate programming: idea</h4>
+
+<p><img src="img/Fig1.png"/></p>
+
+<p>devices</p>
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-transition="none"
+      data-transition-speed="fast">
+  
+
+<h4 id="aggregate-programming-idea-1">Aggregate programming: idea</h4>
+
+<p><img src="img/Fig2.png"/></p>
+
+<p>logical network</p>
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-transition="none"
+      data-transition-speed="fast">
+  
+
+<h4 id="aggregate-programming-idea-2">Aggregate programming: idea</h4>
+
+<p><img src="img/Fig2.png"/></p>
+
+<p>each device holds some values</p>
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-transition="none"
+      data-transition-speed="fast">
+  
+
+<h4 id="aggregate-programming-idea-3">Aggregate programming: idea</h4>
+
+<p><img src="img/Fig3.png"/></p>
+
+<p>interpret such values as a field in space-time</p>
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-transition="none"
+      data-transition-speed="fast">
+  
+
+<h4 id="aggregate-programming-idea-4">Aggregate programming: idea</h4>
+
+<p><img src="img/Fig3.png"/></p>
+
+<p>(computational field)</p>
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-transition="none"
+      data-transition-speed="fast">
+  
+
+<h4 id="aggregate-programming-idea-5">Aggregate programming: idea</h4>
+
+<p><img src="img/Fig3.png"/></p>
+
+<p>↑↑↑ Compute on these things ↑↑↑</p>
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-background-image="img/bg.png">
+  
+
+<section data-shortcode-section>
+<h3 id="aggregate-programming">Aggregate programming</h3>
+
+<ul>
+<li>our machine is the <em>ensemble</em> of situated devices</li>
+<li>computing happens by means of combining fields
+<p class="fragment fade-in">straightforward mapping to functional languages</p>
+<ul>
+<li class="fragment fade-in">compositionality by function composition (<i>divide et impera</i>)</li>
+<li class="fragment fade-in">Low adoption barrier for those who know functional programming!</li>
+<li class="fragment fade-in">networking and platform hidden under the hood</li>
+</ul></li>
+</ul>
+
+</section>
+
+<section data-noprocess data-shortcode-slide
+      data-background-image="img/bg.png">
+  
+
+<section data-noprocess>
+    <p class="fragment fade-in" data-fragment-index=6><b>↓Nice place to work↓</b></p>
+    <p class="fragment fade-in" data-fragment-index=5>Reusable aggregate library</p>
+    <p class="fragment fade-in" data-fragment-index=4>Self-stabilizing blocks</p>
+    <p class="fragment fade-in" data-fragment-index=3>Language primitives</p>
+    <p class="fragment fade-in" data-fragment-index=2>Interpreter</p>
+    <p class="fragment fade-in" data-fragment-index=1>Device abstraction (sensors, actuators)</p>
+    Underlying platform (cloud? actors? LoRaWAN?)
+</section>
+
+</section>
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-background-image="img/bg.svg">
+  
+
+<h3 id="field-computation-example">Field computation example</h3>
+
+<div style="width: 60%; margin: auto;">
+<img src="img/ing-mix5.pdf.png" />
+</div>
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-background-image="img/bg.svg">
+  
+
+<h3 id="space-fields-of-fields">Space: fields of fields</h3>
+
+<div style="width: 100%; margin: auto;">
+<img src="img/ing-nbr.pdf.png" />
+</div>
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-background-image="img/bg.svg">
+  
+
+<h3 id="time-field-evolution">Time: field evolution</h3>
+
+<p><img src="img/ing-rep.pdf.png" /></p>
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-background-image="img/bg.svg">
+  
+
+<h3 id="if-domain-separation">If: domain separation</h3>
+
+<p><img src="img/ing-if2.pdf.png" /></p>
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-background-image="img/bg.svg">
+  
+
+<h3 id="real-systems-subject-to-relativistic-effects">Real systems: subject to &ldquo;relativistic effects&rdquo;</h3>
+
+<div style="width: 70%; margin: auto;">
+<img src="img/spacetime.png" />
+</div>
+
+</section>
+
+<section data-shortcode-section>
+<p><section data-noprocess data-shortcode-slide
+      data-background-image="img/bg.svg"></p>
+
+<h3 id="the-feel-of-it">The feel of it</h3>
+
+<p><video width="100%" height="80%" autoplay controls><source data-src="video/ieeeiot-upgrade.mkv" type="video/webm" /></video>
+<a href="https://vimeo.com/260445665">red</a> means overcrowding</p>
+
+</section><section>
+
+<h3 id="the-feel-of-it-1">The feel of it</h3>
+
+<pre><code class="language-java">import ...
+// A field counting people around each point in space
+def countNearby(range) {
+  let human = rep(h &lt;- env.has(&quot;human&quot;)) { h };
+  sumHood PlusSelf(
+    mux(human &amp;&amp; nbrRange() &lt; range) { 1 } else { 0 })
+}
+</code></pre>
+
+<p>actual code from <a href="https://doi.org/10.1016/j.future.2018.09.005">Modelling and simulation of Opportunistic IoT Services with Aggregate Computing</a></p>
+
+</section><section>
+
+<h3 id="the-feel-of-it-2">The feel of it</h3>
+
+<pre><code class="language-java">import ...
+// A field estimating people density in an area
+def densityEst(p, range, w) {
+  countNearby(range) / (p * pi * range ^ 2 * w)
+}
+</code></pre>
+
+<p>(actual code from <a href="https://doi.org/10.1016/j.future.2018.09.005">Modelling and simulation of Opportunistic IoT Services with Aggregate Computing</a>)</p>
+
+</section><section>
+
+<h3 id="the-feel-of-it-3">The feel of it</h3>
+
+<pre><code class="language-java">import ...
+// A field of boolean, true if the area is overcrowded
+def dangerousDensity(p, range, dangerousDensity, groupSize, w) {
+  let partition = S(range, nbrRange);
+  let localDensity = densityEst(p, range, w);
+  let avg = summarize(partition, sum, localDensity, 0)
+    / summarize(partition, sum, 1, 0);
+  let count = summarize(partition, sum, 1 / p, 0);
+  avg &gt; dangerousDensity &amp;&amp; count &gt; groupSize
+}
+</code></pre>
+
+<p>(actual code from <a href="https://doi.org/10.1016/j.future.2018.09.005">Modelling and simulation of Opportunistic IoT Services with Aggregate Computing</a>)</p>
+
+</section><section>
+
+<h3 id="the-feel-of-it-4">The feel of it</h3>
+
+<pre><code class="language-java">import ...
+/* A field that partitions space in safe, overcrowded,
+   and overcrowding areas, given a certain time window */
+def crowdTracking(p, range, w, maxDense,
+      dangerThr, groupSize, time) {
+  if (isRecentEvent(densityEst(p, range, w) &gt; maxDense, time)) {
+    if (dangerousDensity(p, range, dangerThr, groupSize, w)) {
+      overcrowded()
+    } else { atRisk() }
+  } else { none() }
+}
+// Application code: crowd density tracking in a 60s window
+crowdTracking(0.005, 30, 0.25, 1.08, 2.17, 300, 60);
+</code></pre>
+
+<p>(actual code from <a href="https://doi.org/10.1016/j.future.2018.09.005">Modelling and simulation of Opportunistic IoT Services with Aggregate Computing</a>)</p>
+
+</section>
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-background-image="img/bg.png">
+  
+
+<h4 id="engineering-toolchain">Engineering toolchain</h4>
+
+<ul>
+<li><a href="https://arxiv.org/abs/1610.08116">A higher order calculus</a></li>
+<li>Two practical languages
+
+<ul>
+<li><a href="www.protelis.org"><img src="img/logoprotelis.svg" style="width:3%;margin:0"/> Protelis</a>
+
+<ul>
+<li>Java-hosted stand-alone language</li>
+</ul></li>
+<li><a href="https://scafi.github.io/">Scafi</a>
+
+<ul>
+<li>Scala internal DSL</li>
+</ul></li>
+</ul></li>
+<li>Multiple simulators (it&rsquo;s easy to attach them)
+
+<ul>
+<li><a href="https://alchemistsimulator.github.io"><img src="img/logoalchemist.svg" style="width:3%;margin:0"/> Alchemist</a>
+
+<ul>
+<li>Supports both Protelis and Scafi</li>
+</ul></li>
+<li><a href="https://github.com/Protelis/Protelis-Demo-Visualized">NASA WorldWind</a></li>
+</ul></li>
+</ul>
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-background-image="img/bg.png">
+  
+
+<h4 id="integration">Integration</h4>
+
+<ul>
+<li>Requirements:
+
+<ul>
+<li>Devices exchange data with their &ldquo;neighbors&rdquo;
+
+<ul>
+<li>Whatever a &ldquo;neighborhood&rdquo; is</li>
+</ul></li>
+</ul></li>
+<li>No assumption on the deployment</li>
+<li>No assumption on communication means</li>
+</ul>
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-background-image="img/bg.png">
+  
+
+<h4 id="integration-1">Integration</h4>
+
+<p>Computation may happen:
+<ul>
+  <li>on each device</li>
+  <li class="fragment fade-in">on the edge</li>
+  <li class="fragment fade-in">on the cloud</li>
+</ul></p>
+
+<span class='fragment '
+  >
+  the aggregate software does not change at all
+</span>
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-background-image="img/bg.png">
+  
+
+<h4 id="integration-2">Integration</h4>
+
+<p>No magic, deployment-specific complexity is simply incapsulated under the hood</p>
+
+<p><i><span class='fragment '
+  >
+  divide et impera
+</span></i></p>
+
+<ul>
+<li>Write the application thinking of <em>what</em> it should do</li>
+<li>Write the platform thinking of <em>where</em> it should run
+
+<ul>
+<li>And reuse it for future applications</li>
+</ul></li>
+</ul>
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-background-image="img/bg.png">
+  
+
+<h4 id="silver-bullet">Silver bullet?</h4>
+
+<p><b class="fragment fade-in" data-fragment-index=0>nope</b></p>
+
+<ul>
+  <li class="fragment fade-in-then-semi-out" data-fragment-index=1>Very handy for expressing the "coordination"</li>
+  <li class="fragment fade-in-then-semi-out" data-fragment-index=2>Other paradigms are better at the good ol' "local" programming</li>
+  <ul>
+    <li class="fragment fade-in-then-semi-out" data-fragment-index=2>e.g. I wouldn't develop a GUI in aggregate...</li>
+    <li class="fragment fade-in-then-semi-out" data-fragment-index=2>(although technically doable)</li>
+  </ul>
+  <li class="fragment fade-in-then-semi-out" data-fragment-index=3>The final software is usually a mixture of paradigms</li>
+</ul>
+
+</section>
+
+
+<section data-noprocess data-shortcode-slide
+      data-background-image="img/bg.png">
+  
+
+<h4 id="abstraction-is-not-a-free-lunch">abstraction is not a free lunch</h4>
+
+<p class="fragment fade-in" data-fragment-index=0>abstraction raised by hiding networking and protocols</p>
+
+<ul>
+  <li class="fragment fade-in" data-fragment-index=1><b>harder to optimize</b> for bandwidth saving</li>
+  <ul>
+    <li class="fragment fade-in-then-semi-out" data-fragment-index=2><b>application-specific optimization</b> at the platform level breaks the paradigm</li>
+  </ul>
+  <li class="fragment fade-in" data-fragment-index=3><b>security</b> is a serious concern</li>
+  <ul>
+    <li class="fragment fade-in-then-semi-out" data-fragment-index=4>Some work on <a href="https://doi.org/10.1016/j.scico.2018.07.006">application-level countermeasures</a></li>
+    <li class="fragment fade-in-then-semi-out" data-fragment-index=5>Platform-level attacks disrupt the paradigm</li>
+    <ul>
+      <li class="fragment fade-in-then-semi-out" data-fragment-index=5>A work on this <a href ="http://pccmvo-goodtechs-2018.surge.sh/">is being presented right now</a></li>
+    </ul>
+  </ul>
+</ul>
+
+</section><section>
+
+<h4 id="appendix-play-with-it">Appendix: play with it!</h4>
+
+<p><a href="https://www.slideshare.net/DanySK/practical-aggregate-programming-with-protelis-saso2017">A tutorial for learning Protelis</a> is available</p>
+
+<p>Scafi is better learned by reading <a href="https://link.springer.com/chapter/10.1007/978-3-030-00302-9_4">a paper</a> (for now)</p>
+</section>
+
+  
+
+
+</div>
+      
+
+    </div>
+<script type="text/javascript" src=./reveal-hugo/object-assign.js></script>
+
+<a href="./reveal-js/css/print/" id="print-location" style="display: none;"></a>
+<script type="text/javascript">
+  var printLocationElement = document.getElementById('print-location');
+  var link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.type = 'text/css';
+  link.href = printLocationElement.href + (window.location.search.match(/print-pdf/gi) ? 'pdf.css' : 'paper.css');
+  document.getElementsByTagName('head')[0].appendChild(link);
+</script>
+
+<script type="application/json" id="reveal-hugo-site-params">null</script>
+<script type="application/json" id="reveal-hugo-page-params">{"slide_number":"true","theme":"blood"}</script>
+
+<script src="./reveal-js/lib/js/head.min.js"></script>
+<script src="./reveal-js/js/reveal.js"></script>
+
+<script type="text/javascript">
+  
+  
+  function camelize(map) {
+    if (map) {
+      Object.keys(map).forEach(function(k) {
+        newK = k.replace(/(\_\w)/g, function(m) { return m[1].toUpperCase() });
+        if (newK != k) {
+          map[newK] = map[k];
+          delete map[k];
+        }
+      });
+    }
+    return map;
+  }
+  
+  var revealHugoDefaults = { center: true, controls: true, history: true, progress: true, transition: "slide" };
+  var revealHugoSiteParams = JSON.parse(document.getElementById('reveal-hugo-site-params').innerHTML);
+  var revealHugoPageParams = JSON.parse(document.getElementById('reveal-hugo-page-params').innerHTML);
+  
+  var options = Object.assign({},
+    camelize(revealHugoDefaults),
+    camelize(revealHugoSiteParams),
+    camelize(revealHugoPageParams));
+  Reveal.initialize(options);
+</script>
+
+<script type="text/javascript" src="./reveal-js/lib/js/classList.js"></script>
+
+
+<script type="text/javascript" src="./reveal-js/plugin/markdown/marked.js"></script>
+
+<script type="text/javascript" src="./reveal-js/plugin/markdown/markdown.js"></script>
+
+<script type="text/javascript" src="./reveal-js/plugin/highlight/highlight.js"></script>
+
+<script type="text/javascript" src="./reveal-js/plugin/zoom-js/zoom.js"></script>
+
+
+<script type="text/javascript" src="./reveal-js/plugin/notes/notes.js"></script>
+
+
+
+<script type="text/javascript">
+if (hljs)
+  hljs.initHighlightingOnLoad();
+</script>
+    
+    
+  </body>
+</html>
