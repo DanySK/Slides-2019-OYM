@@ -1,0 +1,11 @@
+baseURL = "."
+languageCode = "en-us"
+title = "From nature inspiration to aggregate computing"
+theme = "reveal-hugo"
+relativeURLs = "true"
+uglyURLs = "true"
+
+[outputFormats.Reveal]
+baseName = "index"
+mediaType = "text/html"
+isHTML = true
